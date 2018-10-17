@@ -24,11 +24,11 @@ public class SpecialManager {
 
 			// char maj 65 => 90
 			for (char letter : T.toCharArray()) {
-				if (letter >= 33 && letter <= 126) {
-					result[i]+=(ROW[i].substring((letter - 33) * w,(letter - 33) * w + w));
-				} else {
-					result[i]+=(ROW[i].substring(w * 26, (w * 26) + w));
-				}
+				if (letter >= 32 && letter <= 126) {
+					result[i]+=(ROW[i].substring((letter - 32) * w,(letter - 32) * w + w));
+				}// else {
+					//result[i]+=(ROW[i].substring(w * 26, (w * 26) + w));
+				//}
 				
 
 			}
